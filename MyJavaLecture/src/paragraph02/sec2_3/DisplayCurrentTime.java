@@ -24,9 +24,11 @@ public class DisplayCurrentTime {
         long currentHour = allHours % 24;
 
         //输出当前时间
-        System.out.println("The current time(UTC) is: " + currentHour + ":" + currentMinute + ":" + currentSecond);
+        System.out.println("The current time(UTC) is: " + currentHour + ":" +
+                           currentMinute + ":" + currentSecond);
         currentHour = (currentHour + 8) % 24;
-        System.out.println("The current time(Beijing) is: " + currentHour + ":" + currentMinute + ":" + currentSecond);
+        System.out.println("The current time(Beijing) is: " + currentHour + 
+                           ":" + currentMinute + ":" + currentSecond);
 
         int a = 0x12;
         int b = 0xffffffff;
